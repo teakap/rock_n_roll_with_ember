@@ -1,7 +1,7 @@
-import EmberObject from '@ember/object';
-export default EmberObject.extend({
-  title: '',
-  rating: 0,
-  band: null,
+import Model, { attr, belongsTo } from '@ember-data/model';
+export default Model.extend({
+  title: attr(),
+  rating: attr('number'),
+  band: belongsTo(),
 
 });
